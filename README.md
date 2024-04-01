@@ -74,7 +74,7 @@ As definições de treino para os modelos YOLO englobam vários [hiperparâmetro
 - **mAP50**: metrica de precisao
 
 ## 4. METRICAS DE DESEMPENHO
-- [Documentacao das métricas](https://docs.ultralytics.com/pt/models/yolov8/#supported-tasks-and-modes)
+- [Documentacao](https://docs.ultralytics.com/pt/models/yolov8/#supported-tasks-and-modes)
 - Os modelos Detect, Segment e Pose são pré-treinados no conjunto de dados **COCO**, enquanto os modelos classificacao são pré-treinados no conjunto de dados **ImageNet**. 
 - tamanho(pixels): resolucao das imagens (padrao=640)
 - Deteccao (**COCO**)/ média de precisão: mAPval50-95 -> 50 a 95 indica a média da precisão média em diferentes níveis de confiança de detecção, que vão de 50% a 95% de confiança

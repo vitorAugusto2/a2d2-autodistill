@@ -94,6 +94,7 @@ As definições de treino para os modelos YOLO englobam vários [hiperparâmetro
 
 
 ## 5. GRAFICO DE TREINAMENTO
+![Resultado do grafico de treinamento](https://github.com/vitorAugusto2/tcc-a2d2/blob/main/runs/detect/train/results.png)
 ### 5.1. METRICAS DE TREINAMENTO (CONJUNTO DE TREINAMENTO)
 - **train/box_loss**: perda (loss) associada à localização (bounding box)
 - **train/cls_loss**: perda associada à classificação dos objetos (ou seja, atribuir a categoria correta aos objetos detectados) 

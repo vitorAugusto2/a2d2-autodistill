@@ -92,7 +92,7 @@ As definições de treino para os modelos YOLO englobam vários [hiperparâmetro
 - **val/box_loss**: perda associada à localização dos objetos
 - **val/cls_loss**: perda associada à classificação dos objetos
 - **val/dfl_loss**: perda associada à localização dos objetos
-#### 5.3. METRICAS DE AVALIACAO (ACURACIA)
+### 5.3. METRICAS DE AVALIACAO (ACURACIA)
 - **metrics/precision(B)**: Precisão (Precision) para a classe 'B'. Isso geralmente se refere à proporção de verdadeiros positivos (TP) sobre a soma de TP e falsos positivos (FP).
 - **metrics/recall(B)**:  Revocação (Recall) para a classe 'B'. Isso geralmente se refere à proporção de TP sobre a soma de TP e falsos negativos (FN).
 - **metrics/mAP50(B)**: Precisao média com threshold de IoU de 0.5 para a classe 'B'.

@@ -6,7 +6,6 @@
 - O Autodistill usa modelos básicos grandes e mais lentos para treinar modelos supervisionados pequenos e mais rápidos. Usando autodistill, você pode passar de imagens não rotuladas para inferência em um modelo personalizado executado na borda, sem intervenção humana no meio
 - [Rotular automaticamente conjuntos de dados](https://docs.autodistill.com/)
 
-
 ## 2. CONCEITOS BASICOS
 - Para usar autodistill, você insere dados não rotulados em um modelo base que usa uma ontologia para rotular um conjunto de dados que é usado para treinar um modelo de destino que gera um modelo destilado ajustado para executar uma tarefa específica.
 - Autodistill define várias primitivas básicas:
@@ -16,11 +15,9 @@
     - **Conjunto de dados** - um conjunto de dados é um conjunto de dados rotulados automaticamente que pode ser usado para treinar um modelo de destino. É a saída gerada por um Modelo Base.
     - **Modelo de destino** - um modelo de destino é um modelo supervisionado que consome um conjunto de dados e gera um modelo destilado que está pronto para implantação. Os modelos de destino geralmente são pequenos, rápidos e ajustados para executar muito bem uma tarefa específica (mas não generalizam muito além das informações descritas em seu conjunto de dados). Exemplos de modelos de destino são YOLOv8 e DETR.
     - **Modelo Destilado** – um Modelo Destilado é o resultado final do autodistillprocesso; é um conjunto de pesos ajustados para sua tarefa que pode ser implantado para obter previsões.
-
 ## 2.1. CONCEITOS PRINCIPAIS
 - Um modelo base , que é usado para rotular dados automaticamente. Os exemplos incluem Grounding DINO, Grounded SAM e CLIP. 
 - Um modelo de destino , que é treinado nos dados rotulados automaticamente. Os exemplos incluem YOLOv5, [**YOLOv8**](https://github.com/autodistill/autodistill-yolov8) e DETR.
-
 
 ## 3. MODELOS UTILIZADOS
 - **Deteccao e Segmentacao**

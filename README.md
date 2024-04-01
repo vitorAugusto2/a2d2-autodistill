@@ -74,7 +74,7 @@ As definições de treino para os modelos YOLO englobam vários [hiperparâmetro
 - **mAP50**: metrica de precisao
 
 ## 4. METRICAS DE DESEMPENHO
-- [Desempenho de de](https://docs.ultralytics.com/pt/models/yolov8/#supported-tasks-and-modes)
+- [Desempenho de deteccao](https://docs.ultralytics.com/pt/models/yolov8/#supported-tasks-and-modes)
 
 | Modelo  | Tamanho (pixéis)  | mAPval | Velocidade CPU ONNX (ms)  | Velocidade A100 TensorRT (ms) | Params (M) | FLOPs (B)  |
 |---------|-------------------|--------|---------------------------|-------------------------------|------------|------------|

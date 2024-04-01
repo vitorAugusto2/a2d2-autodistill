@@ -1,6 +1,5 @@
 # REPOSITORIO TESTE: AUTODISTILL E YOLOV8
 
-//
 
 # AUTODISTILL
 ## 1. INTRODUCAO
@@ -28,14 +27,13 @@
     - [GroundedSAM](https://github.com/autodistill/autodistill-grounded-sam): combina SAM com Grounding DINO para gerar máscaras de segmentação a partir de previsões Grounding DINO
 - **Classificacao**
     - [CLIP](https://github.com/autodistill/autodistill-clip): desenvolvido pela OpenAI, é um modelo de visão computacional treinado usando pares de imagens e texto para classificação de imagens.
-      
-//
+
+
 
 # ULTRALYTICS YOLOv8
 ## 1. INTRODUCAO 
 - modelo de deteccao de objetos e segmentacao de imagens em tempo real. Aprendizagem profunda e visao computacional. Alem disso, consegue classificar os objetos.
 - 5 modelos [YOLOv8](https://docs.ultralytics.com/pt/models/yolov8/): YOLOv8n, YOLOv8s, YOLOv8m, YOLOv8l e YOLOv8x
-
 
 ## 2. CONFIGURACOES
 ### 2.1. MODOS
@@ -63,7 +61,6 @@ tarefas diferem no tipo de resultados que produzem e no problema específico que
 ## 2.3. ARGS
 As definições de treino para os modelos YOLO englobam vários [hiperparâmetros e configurações](https://docs.ultralytics.com/pt/modes/train/#train-settings) utilizados durante o processo de treino. Estas definições influenciam o desempenho, a velocidade e a precisão do modelo. As principais definições de treino incluem o tamanho do lote, a taxa de aprendizagem, o momento e a diminuição do peso. Além disso, a escolha do optimizador, a função de perda e a composição do conjunto de dados de treino podem ter impacto no processo de treino. O ajuste cuidadoso e a experimentação com estas definições são cruciais para otimizar o desempenho.
 
-
 ## 3. METRICAS DE TREINAMENTO
 - **Epoch**: ciclos de treinamento ou numero de vezes que iteramos 
 - **GPU_mem**: memoria da GPU
@@ -79,7 +76,6 @@ As definições de treino para os modelos YOLO englobam vários [hiperparâmetro
 - **R**: valor de recuperacao
 - **mAP50**: metrica de precisao
 
-
 ## 4. METRICAS DE DESEMPENHO
 - [Documentacao das métricas](https://docs.ultralytics.com/pt/models/yolov8/#supported-tasks-and-modes)
 - Os modelos Detect, Segment e Pose são pré-treinados no conjunto de dados **COCO**, enquanto os modelos classificacao são pré-treinados no conjunto de dados **ImageNet**. 
@@ -90,18 +86,15 @@ As definições de treino para os modelos YOLO englobam vários [hiperparâmetro
 - params (M): número de parâmetros (em milhões) que o modelo possui
 - FLOPs(B):  número de operações de ponto flutuante (em bilhões) que o modelo realiza durante a inferência.
 
-
 ## 5. GRAFICO DE TREINAMENTO
 ### 5.1. METRICAS DE TREINAMENTO (CONJUNTO DE TREINAMENTO)
 - **train/box_loss**: perda (loss) associada à localização (bounding box)
 - **train/cls_loss**: perda associada à classificação dos objetos (ou seja, atribuir a categoria correta aos objetos detectados) 
 - **train/dfl_loss**: "defocus loss", objetos fora de foco em imagens
-
 ### 5.2. METRICAS DE VALIDACAO (CONJUNTO DE VALIDADACAO)
 - **val/box_loss**: perda associada à localização dos objetos
 - **val/cls_loss**: perda associada à classificação dos objetos
 - **val/dfl_loss**: perda associada à localização dos objetos
-
 #### 5.3. METRICAS DE AVALIACAO (ACURACIA)
 - **metrics/precision(B)**: Precisão (Precision) para a classe 'B'. Isso geralmente se refere à proporção de verdadeiros positivos (TP) sobre a soma de TP e falsos positivos (FP).
 - **metrics/recall(B)**:  Revocação (Recall) para a classe 'B'. Isso geralmente se refere à proporção de TP sobre a soma de TP e falsos negativos (FN).

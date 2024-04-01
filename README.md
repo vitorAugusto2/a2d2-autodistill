@@ -59,6 +59,8 @@ tarefas diferem no tipo de resultados que produzem e no problema específico que
 As definições de treino para os modelos YOLO englobam vários [hiperparâmetros e configurações](https://docs.ultralytics.com/pt/modes/train/#train-settings) utilizados durante o processo de treino. Estas definições influenciam o desempenho, a velocidade e a precisão do modelo. As principais definições de treino incluem o tamanho do lote, a taxa de aprendizagem, o momento e a diminuição do peso. Além disso, a escolha do optimizador, a função de perda e a composição do conjunto de dados de treino podem ter impacto no processo de treino. O ajuste cuidadoso e a experimentação com estas definições são cruciais para otimizar o desempenho.
 
 ## 3. METRICAS DE TREINAMENTO
+![image](https://github.com/vitorAugusto2/tcc-a2d2/assets/131685750/efb27566-e7c7-42ed-aaf8-c876da5e7e23)
+
 - **Epoch**: ciclos de treinamento ou numero de vezes que iteramos 
 - **GPU_mem**: memoria da GPU
 - **box_loss**: perda de caixa -> perda da localizacao

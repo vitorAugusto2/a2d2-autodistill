@@ -74,14 +74,7 @@ As definições de treino para os modelos YOLO englobam vários [hiperparâmetro
 - **mAP50**: metrica de precisao
 
 ## 4. METRICAS DE DESEMPENHO
-- [Documentacao](https://docs.ultralytics.com/pt/models/yolov8/#supported-tasks-and-modes)
-- Os modelos Detect, Segment e Pose são pré-treinados no conjunto de dados **COCO**, enquanto os modelos classificacao são pré-treinados no conjunto de dados **ImageNet**. 
-- **tamanho(pixels)**: resolucao das imagens (padrao=640)
-- **Deteccao (**COCO**)/ média de precisão**: mAPval50-95 -> 50 a 95 indica a média da precisão média em diferentes níveis de confiança de detecção, que vão de 50% a 95% de confiança
-- **Velocidade CPU ONNX (ms)**: tempo médio de inferência em milissegundos para os modelos executando em uma CPU utilizando a estrutura ONNX 
-- **Velocidade A100 TensorRT (ms)**: tempo médio de inferência em milissegundos para os modelos executando em um A100 TensorRT
-- **params (M)**: número de parâmetros (em milhões) que o modelo possui
-- **FLOPs (B)**:  número de operações de ponto flutuante (em bilhões) que o modelo realiza durante a inferência.
+- [Desempenho de de](https://docs.ultralytics.com/pt/models/yolov8/#supported-tasks-and-modes)
 
 | Modelo  | Tamanho (pixéis)  | mAPval | Velocidade CPU ONNX (ms)  | Velocidade A100 TensorRT (ms) | Params (M) | FLOPs (B)  |
 |---------|-------------------|--------|---------------------------|-------------------------------|------------|------------|
@@ -90,6 +83,14 @@ As definições de treino para os modelos YOLO englobam vários [hiperparâmetro
 | YOLOv8m | 640               | 50.2   | 234.7                     | 1.83                          | 25.9       | 78.9       |
 | YOLOv8l | 640               | 52.9   | 375.2                     | 2.39                          | 43.7       | 165.2      |
 | YOLOv8x | 640               | 53.9   | 479.1                     | 3.53                          | 68.2       | 257.8      |
+
+- Os modelos Detect, Segment e Pose são pré-treinados no conjunto de dados **COCO**, enquanto os modelos classificacao são pré-treinados no conjunto de dados **ImageNet**. 
+- **tamanho(pixels)**: resolucao das imagens (padrao=640)
+- **Deteccao (**COCO**)/ média de precisão**: mAPval50-95 -> 50 a 95 indica a média da precisão média em diferentes níveis de confiança de detecção, que vão de 50% a 95% de confiança
+- **Velocidade CPU ONNX (ms)**: tempo médio de inferência em milissegundos para os modelos executando em uma CPU utilizando a estrutura ONNX 
+- **Velocidade A100 TensorRT (ms)**: tempo médio de inferência em milissegundos para os modelos executando em um A100 TensorRT
+- **params (M)**: número de parâmetros (em milhões) que o modelo possui
+- **FLOPs (B)**:  número de operações de ponto flutuante (em bilhões) que o modelo realiza durante a inferência.
 
 
 ## 5. GRAFICO DE TREINAMENTO

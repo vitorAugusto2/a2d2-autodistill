@@ -1,6 +1,6 @@
 # REPOSITORIO TESTE: AUTODISTILL E YOLOV8
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//
 
 # AUTODISTILL
 ## 1. INTRODUCAO
@@ -29,7 +29,7 @@
 - **Classificacao**
     - [CLIP](https://github.com/autodistill/autodistill-clip): desenvolvido pela OpenAI, é um modelo de visão computacional treinado usando pares de imagens e texto para classificação de imagens.
       
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//
 
 # ULTRALYTICS YOLOv8
 ## 1. INTRODUCAO 

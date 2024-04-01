@@ -82,7 +82,8 @@ As definições de treino para os modelos YOLO englobam vários [hiperparâmetro
 - **Velocidade A100 TensorRT (ms)**: tempo médio de inferência em milissegundos para os modelos executando em um A100 TensorRT
 - **params (M)**: número de parâmetros (em milhões) que o modelo possui
 - **FLOPs (B)**:  número de operações de ponto flutuante (em bilhões) que o modelo realiza durante a inferência.
-- | Modelo  | Tamanho (pixéis) | mAPval | Velocidade CPU ONNX (ms) | Velocidade A100 TensorRT (ms) | Params (M) | FLOPs (B) |
+
+| Modelo  | Tamanho (pixéis)  | mAPval | Velocidade CPU ONNX (ms)  | Velocidade A100 TensorRT (ms) | Params (M) | FLOPs (B)  |
 |---------|-------------------|--------|---------------------------|-------------------------------|------------|------------|
 | YOLOv8n | 640               | 37.3   | 80.4                      | 0.99                          | 3.2        | 8.7        |
 | YOLOv8s | 640               | 44.9   | 128.4                     | 1.20                          | 11.2       | 28.6       |

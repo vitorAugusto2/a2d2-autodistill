@@ -1,6 +1,3 @@
-# REPOSITORIO TESTE: AUTODISTILL E YOLOV8
-
-
 # AUTODISTILL
 ## 1. INTRODUCAO
 - O Autodistill usa modelos básicos grandes e mais lentos para treinar modelos supervisionados pequenos e mais rápidos. Usando autodistill, você pode passar de imagens não rotuladas para inferência em um modelo personalizado executado na borda, sem intervenção humana no meio

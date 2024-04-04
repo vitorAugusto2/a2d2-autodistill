@@ -2,7 +2,7 @@
 ## 1. INTRODUCAO
 - O Autodistill usa modelos básicos grandes e mais lentos para treinar modelos supervisionados pequenos e mais rápidos. Usando autodistill, você pode passar de imagens não rotuladas para inferência em um modelo personalizado executado na borda, sem intervenção humana no meio
 - [Rotular automaticamente conjuntos de dados](https://docs.autodistill.com/)
-
+![imgteste](https://github.com/vitorAugusto2/tcc-a2d2-autodistill-yolo/blob/main/images/20180810150607_camera_frontcenter_000000083.png)
 ## 2. CONCEITOS BASICOS
 - Para usar autodistill, você insere dados não rotulados em um modelo base que usa uma ontologia para rotular um conjunto de dados que é usado para treinar um modelo de destino que gera um modelo destilado ajustado para executar uma tarefa específica.
 - Autodistill define várias primitivas básicas:

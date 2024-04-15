@@ -13,10 +13,10 @@
     - **Modelo de destino** - um modelo de destino é um modelo supervisionado que consome um conjunto de dados e gera um modelo destilado que está pronto para implantação. Os modelos de destino geralmente são pequenos, rápidos e ajustados para executar muito bem uma tarefa específica (mas não generalizam muito além das informações descritas em seu conjunto de dados). Exemplos de modelos de destino são YOLOv8 e DETR.
     - **Modelo Destilado** – um Modelo Destilado é o resultado final do autodistillprocesso; é um conjunto de pesos ajustados para sua tarefa que pode ser implantado para obter previsões.
 ### 2.1. Conceitos Principais
-- Um modelo base , que é usado para rotular dados automaticamente. Os exemplos incluem Grounding DINO, Grounded SAM e CLIP. 
+- Um modelo base , que é usado para rotular dados automaticamente. Os exemplos incluem Grounding DINO, Grounded SAM, DETIC CLIP. 
 - Um modelo de destino , que é treinado nos dados rotulados automaticamente. Os exemplos incluem YOLOv5, [**YOLOv8**](https://github.com/autodistill/autodistill-yolov8) e DETR.
 
-## 3. MODELOS UTILIZADOS
+## 3. MODELO BASE UTILIZADO
 - **Grounding DINO**
     - [Grounding DINO](https://github.com/autodistill/autodistill-grounding-dino): é um detector de objetos de disparo zero eficaz que pode identificar uma ampla variedade de objetos, desde carros até capas de discos de vinil.
 

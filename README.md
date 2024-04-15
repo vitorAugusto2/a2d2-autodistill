@@ -19,12 +19,6 @@
 ## 3. MODELOS UTILIZADOS
 - **Grounding DINO**
     - [Grounding DINO](https://github.com/autodistill/autodistill-grounding-dino): é um detector de objetos de disparo zero eficaz que pode identificar uma ampla variedade de objetos, desde carros até capas de discos de vinil.
-- **Deteccao e Segmentacao**
-    - [GroundedSAM](https://github.com/autodistill/autodistill-grounded-sam): combina SAM com Grounding DINO para gerar máscaras de segmentação a partir de previsões Grounding DINO
-- **Classificacao**
-    - [CLIP](https://github.com/autodistill/autodistill-clip): desenvolvido pela OpenAI, é um modelo de visão computacional treinado usando pares de imagens e texto para classificação de imagens.
-
-
 
 # 🔎 ULTRALYTICS YOLOv8
 ## 1. INTRODUCAO 

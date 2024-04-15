@@ -17,6 +17,8 @@
 - Um modelo de destino , que é treinado nos dados rotulados automaticamente. Os exemplos incluem YOLOv5, [**YOLOv8**](https://github.com/autodistill/autodistill-yolov8) e DETR.
 
 ## 3. MODELOS UTILIZADOS
+- **Grounding DINO**
+    - [Grounding DINO](https://github.com/autodistill/autodistill-grounding-dino): é um detector de objetos de disparo zero eficaz que pode identificar uma ampla variedade de objetos, desde carros até capas de discos de vinil.
 - **Deteccao e Segmentacao**
     - [GroundedSAM](https://github.com/autodistill/autodistill-grounded-sam): combina SAM com Grounding DINO para gerar máscaras de segmentação a partir de previsões Grounding DINO
 - **Classificacao**

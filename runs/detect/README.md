@@ -7,6 +7,24 @@
 - Python 3.12.3
 
 # Rotulacao de imagens (Autodistill)
+```python
+# Definir ontology
+ontology=CaptionOntology({
+  "Car" : "Car",
+  "Bicycle" : "Bicycle",
+  "Pedestrian": "Pedestrian",
+  "Truck": "Truck",
+  "Traffic sign" : "Traffic sign"
+})
+
+# Modelo base é iniciado por ontology
+base_model = GroundingDINO(ontology=ontology) # modelo base: GroundingDINO
+dataset = base_model.label(
+    input_folder=IMAGE_DIR_PATH,      # entrada de dados
+    extension=".png",                 # extensao da imagem .png
+    output_folder=DATASET_DIR_PATH)   # armazena a saida dos dados rotulados
+
+```
 - Modelo base: GroundDINO
 - 1000 imagens
 - 800 train
@@ -18,7 +36,6 @@
 ## Test1
 ```python
 # Train
-
 !yolo \
 task=detect \
 mode=train \
@@ -32,7 +49,6 @@ name=test1/yolov8n_200i_5e_train
 
 ```python
 # Val
-
 !yolo \
 task=detect \
 mode=val \

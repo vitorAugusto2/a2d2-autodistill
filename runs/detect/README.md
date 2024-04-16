@@ -1,3 +1,8 @@
+# Configuracoes
+- GPU: NVIDA 1660Ti
+- Torch + CUDA: 2.2.2+cu121
+- Python 3.12.3
+
 # Rotulacao de imagens (Autodistill)
 - Modelo base: GroundDINO
 - 1000 imagens

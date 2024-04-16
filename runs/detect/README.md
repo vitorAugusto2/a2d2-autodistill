@@ -7,7 +7,7 @@
 
 
 # Test1
-- model: yolov8n
+- modelo destino: yolov8n
 - epochs: 5
 - tempo: 6:12
 
@@ -19,7 +19,7 @@
 #
 
 # Test2
-- model: yolov8n
+- model destino: yolov8n
 - epochs: 10
 - tempo: 12:33
 

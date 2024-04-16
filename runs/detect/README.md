@@ -11,6 +11,7 @@
 - 1000 imagens
 - 800 train
 - 200 valid
+- Classes: 'Car', 'Bicycle', 'Pedestrian', 'Truck' e 'Traffic sign'
 - Tempo: 55:34
 
 # Resultados

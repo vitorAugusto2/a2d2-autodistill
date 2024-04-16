@@ -1,5 +1,5 @@
 # Geral
-- Um script foi utilizado para selecionar aleatoriamente 1000 imagens, as quais foram posteriormente rotuladas pelo modelo base GroundDINO. Essas imagens foram então divididas em 800 para treinamento e 200 para validação. Em seguida, o modelo destino Yolov8n foi então treinado utilizando as imagens de validação.
+- Um script foi utilizado para selecionar aleatoriamente 1000 imagens, as quais foram posteriormente rotuladas pelo modelo base GroundDINO, com 5 classes de interesse. Essas imagens foram então divididas em 800 para treinamento e 200 para validação. Em seguida, o modelo destino Yolov8n foi então treinado utilizando as imagens de validação.
   
 # Configuracoes
 - GPU: NVIDA 1660Ti

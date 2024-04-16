@@ -1,15 +1,15 @@
 # Rotulacao de imagens (Autodistill)
 - Modelo base: GroundDINO
-- Total de imagens: 1000 imagens
+- 1000 imagens
 - 800 train
 - 200 valid
-- tempo: 55:34
+- Tempo: 55:34
 
 
 # Test1
-- modelo destino: yolov8n
-- epochs: 5
-- tempo: 6:12
+- Modelo destino: yolov8n
+- Epochs: 5
+- Tempo: 6:12
 
 ![image](https://github.com/vitorAugusto2/tcc-a2d2-autodistill-yolo/assets/131685750/4610e25e-8c1b-4903-82e3-cd1f58fbec88)
 ![image](https://github.com/vitorAugusto2/tcc-a2d2-autodistill-yolo/blob/main/runs/detect/test1/yolov8n_200i_5e_train/results.png)
@@ -19,9 +19,9 @@
 #
 
 # Test2
-- model destino: yolov8n
-- epochs: 10
-- tempo: 12:33
+- Model destino: yolov8n
+- Epochs: 10
+- Tempo: 12:33
 
 ![image](https://github.com/vitorAugusto2/tcc-a2d2-autodistill-yolo/assets/131685750/95d4f461-cee2-4083-b1ca-a0a2f1c2e3f5)
 ![image](https://github.com/vitorAugusto2/tcc-a2d2-autodistill-yolo/blob/main/runs/detect/test2/yolov8n_200i_10e_train/results.png)

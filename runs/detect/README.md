@@ -27,8 +27,7 @@ dataset = base_model.label(
 ```
 - Modelo base: GroundDINO
 - 1000 imagens
-- 800 train
-- 200 valid
+- 800 train + 200 valid
 - Classes: `Car`, `Bicycle`, `Pedestrian`, `Truck` e `Traffic sign`
 - Tempo: 55:34
 

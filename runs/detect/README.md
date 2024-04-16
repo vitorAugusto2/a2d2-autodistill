@@ -13,8 +13,8 @@
 - 200 valid
 - Tempo: 55:34
 
-
-# Test1
+# Resultados
+## Test1
 - Modelo destino: yolov8n
 - Epochs: 5
 - Tempo: 6:12
@@ -31,7 +31,7 @@
 
 #
 
-# Test2
+## Test2
 - Model destino: yolov8n
 - Epochs: 10
 - Tempo: 12:33

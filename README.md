@@ -1,9 +1,11 @@
 # ✂️ AUTODISTILL
-## 1. INTRODUCAO
+## Introdução
 - O Autodistill usa modelos básicos grandes e mais lentos para treinar modelos supervisionados pequenos e mais rápidos. Usando autodistill, você pode passar de imagens não rotuladas para inferência em um modelo personalizado executado na borda, sem intervenção humana no meio
-- [Rotular automaticamente conjuntos de dados](https://docs.autodistill.com/)
+- [Rotula automaticamente o conjuntos de dados](https://docs.autodistill.com/)
   
-## 2. CONCEITOS BASICOS
+## Conceitos Básicos
+![image](https://github.com/vitorAugusto2/tcc-a2d2-autodistill-yolo/assets/131685750/6e5bebdb-0188-4c40-8007-eec8d3b1dcc0)
+
 - Para usar autodistill, você insere dados não rotulados em um modelo base que usa uma ontologia para rotular um conjunto de dados que é usado para treinar um modelo de destino que gera um modelo destilado ajustado para executar uma tarefa específica.
 - Autodistill define várias primitivas básicas:
     - **Tarefa** - Uma tarefa define o que um modelo de destino irá prever. A tarefa de cada componente (modelo base, ontologia e modelo de destino) de um autodistillpipeline deve corresponder para que sejam compatíveis entre si. Atualmente, a detecção de objetos e a segmentação de instâncias são suportadas por meio da detectiontarefa. classificationo suporte será adicionado em breve.
@@ -12,21 +14,21 @@
     - **Conjunto de dados** - um conjunto de dados é um conjunto de dados rotulados automaticamente que pode ser usado para treinar um modelo de destino. É a saída gerada por um Modelo Base.
     - **Modelo de destino** - um modelo de destino é um modelo supervisionado que consome um conjunto de dados e gera um modelo destilado que está pronto para implantação. Os modelos de destino geralmente são pequenos, rápidos e ajustados para executar muito bem uma tarefa específica (mas não generalizam muito além das informações descritas em seu conjunto de dados). Exemplos de modelos de destino são YOLOv8 e DETR.
     - **Modelo Destilado** – um Modelo Destilado é o resultado final do autodistillprocesso; é um conjunto de pesos ajustados para sua tarefa que pode ser implantado para obter previsões.
-### 2.1. Conceitos Principais
+### Conceitos Principais
 - Um modelo base , que é usado para rotular dados automaticamente. Os exemplos incluem Grounding DINO, Grounded SAM, DETIC CLIP. 
 - Um modelo de destino , que é treinado nos dados rotulados automaticamente. Os exemplos incluem YOLOv5, [**YOLOv8**](https://github.com/autodistill/autodistill-yolov8) e DETR.
 
-## 3. MODELO BASE UTILIZADO
+## Modelo base utilizado
 - **Grounding DINO**
-    - [Grounding DINO](https://github.com/autodistill/autodistill-grounding-dino): é um detector de objetos de disparo zero eficaz que pode identificar uma ampla variedade de objetos, desde carros até capas de discos de vinil.
+    - [Grounding DINO](https://github.com/autodistill/autodistill-grounding-dino) é um detector de objetos de disparo zero eficaz que pode identificar uma ampla variedade de objetos, desde carros até capas de discos de vinil.
 
 # 🔎 ULTRALYTICS YOLOv8
-## 1. INTRODUCAO 
+## Introdução
 - modelo de deteccao de objetos e segmentacao de imagens em tempo real. Aprendizagem profunda e visao computacional. Alem disso, consegue classificar os objetos.
 - 5 modelos [YOLOv8](https://docs.ultralytics.com/pt/models/yolov8/): YOLOv8n, YOLOv8s, YOLOv8m, YOLOv8l e YOLOv8x
 
-## 2. CONFIGURACOES
-### 2.1. Modos
+## Configurações
+### Modos
 - YOLO Os modelos podem ser utilizados em diferentes modos, dependendo do problema específico que estás a tentar 
 resolver. Estes modos incluem:
     - [**train** ](https://docs.ultralytics.com/pt/modes/train/): Para treinar um modelo YOLOv8 num conjunto de dados personalizado.
@@ -35,7 +37,7 @@ resolver. Estes modos incluem:
     - [**export**](https://docs.ultralytics.com/pt/modes/export/): Para exportar um modelo YOLOv8 para um formato que possa ser usado para implantação.
     - [**track**](https://docs.ultralytics.com/pt/modes/track/): Para seguir objectos em tempo real utilizando um modelo YOLOv8 .
     - [**benchmark**](https://docs.ultralytics.com/pt/modes/benchmark/): Para aferir a velocidade e a precisão das exportações YOLOv8 (ONNX, TensorRT, etc.).
-### 2.2. Tarefas
+### Tarefas
 - YOLO podem ser utilizados para uma variedade de tarefas, incluindo deteção, segmentação, classificação e pose. Estas 
 tarefas diferem no tipo de resultados que produzem e no problema específico que foram concebidos para resolver.
     - [**detect**](https://docs.ultralytics.com/pt/tasks/detect/): Para identificar e localizar objectos ou regiões de interesse numa imagem ou vídeo. O resultado de um 
@@ -48,10 +50,10 @@ tarefas diferem no tipo de resultados que produzem e no problema específico que
     imagens é uma etiqueta de classe única e uma pontuação de confiança.
     - [**pose**](https://docs.ultralytics.com/pt/tasks/pose/): Para identificar objectos e estimar os seus pontos-chave numa imagem ou vídeo.
     - [**OBB**](https://docs.ultralytics.com/pt/tasks/obb/): Caixas delimitadoras orientadas (ou seja, rodadas) adequadas para imagens de satélite ou médicas.
-### 2.3. Argumentos
+### Argumentos
 As definições de treino para os modelos YOLO englobam vários [hiperparâmetros e configurações](https://docs.ultralytics.com/pt/modes/train/#train-settings) utilizados durante o processo de treino. Estas definições influenciam o desempenho, a velocidade e a precisão do modelo. As principais definições de treino incluem o tamanho do lote, a taxa de aprendizagem, o momento e a diminuição do peso. Além disso, a escolha do optimizador, a função de perda e a composição do conjunto de dados de treino podem ter impacto no processo de treino. O ajuste cuidadoso e a experimentação com estas definições são cruciais para otimizar o desempenho.
 
-## 3. METRICAS DE TREINAMENTO
+## Métricas de treinamento
 ![image](https://github.com/vitorAugusto2/tcc-a2d2/assets/131685750/efb27566-e7c7-42ed-aaf8-c876da5e7e23)
 
 - **Epoch**: ciclos de treinamento ou numero de vezes que iteramos 
@@ -68,7 +70,7 @@ As definições de treino para os modelos YOLO englobam vários [hiperparâmetro
 - **R**: valor de recuperacao
 - **mAP50**: metrica de precisao
 
-## 4. METRICAS DE DESEMPENHO
+## Métricas de desemepenho
 [Tabelas com o desempenho de deteccao](https://docs.ultralytics.com/pt/models/yolov8/#supported-tasks-and-modes)
 
 | Modelo  | Tamanho (pixéis)  | mAPval | Velocidade CPU ONNX (ms)  | Velocidade A100 TensorRT (ms) | Params (M) | FLOPs (B)  |
@@ -88,17 +90,17 @@ As definições de treino para os modelos YOLO englobam vários [hiperparâmetro
 - **FLOPs (B)**: número de operações de ponto flutuante (em bilhões) que o modelo realiza durante a inferência.
 
 
-## 5. GRAFICO DE TREINAMENTO
+## Gráfico de treinamento
 ![Resultado do grafico de treinamento](https://github.com/vitorAugusto2/tcc-a2d2-autodistill-yolo/blob/main/runs/detect/test2/yolov8n_200i_10e_train/results.png)
-### 5.1. Metricas de treinamento (conjunto de treinamento)
+### Métricas de treinamento (conjunto de treinamento)
 - **train/box_loss**: perda (loss) associada à localização (bounding box)
 - **train/cls_loss**: perda associada à classificação dos objetos (ou seja, atribuir a categoria correta aos objetos detectados) 
 - **train/dfl_loss**: "defocus loss", objetos fora de foco em imagens
-### 5.2. Metricas de validacao (conjunto de validacao)
+### Métricas de validacao (conjunto de validacao)
 - **val/box_loss**: perda associada à localização dos objetos
 - **val/cls_loss**: perda associada à classificação dos objetos
 - **val/dfl_loss**: perda associada à localização dos objetos
-### 5.3. Metricas de avaliacao (acuracia)
+### Métricas de avaliacao (acuracia)
 - **metrics/precision(B)**: Precisão (Precision) para a classe 'B'. Isso geralmente se refere à proporção de verdadeiros positivos (TP) sobre a soma de TP e falsos positivos (FP).
 - **metrics/recall(B)**: Revocação (Recall) para a classe 'B'. Isso geralmente se refere à proporção de TP sobre a soma de TP e falsos negativos (FN).
 - **metrics/mAP50(B)**: Precisao média com threshold de IoU de 0.5 para a classe 'B'.

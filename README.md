@@ -1,6 +1,4 @@
-[Autodistill](https://github.com/vitorAugusto2/tcc-a2d2-autodistill-yolo/tree/main?tab=readme-ov-file#%EF%B8%8F-autodistill)
-
-# ✂️ AUTODISTILL
+# 💠 AUTODISTILL
 ## Introdução
 - O Autodistill usa modelos básicos grandes e mais lentos para treinar modelos supervisionados pequenos e mais rápidos. Usando autodistill, você pode passar de imagens não rotuladas para inferência em um modelo personalizado executado na borda, sem intervenção humana no meio
 - [Rotula automaticamente o conjuntos de dados](https://docs.autodistill.com/)
@@ -24,7 +22,7 @@
 - **Grounding DINO**
     - [Grounding DINO](https://github.com/autodistill/autodistill-grounding-dino) é um detector de objetos de disparo zero eficaz que pode identificar uma ampla variedade de objetos, desde carros até capas de discos de vinil.
 
-# 🔎 ULTRALYTICS YOLOv8
+# 🔥 ULTRALYTICS YOLOv8
 ## Introdução
 - modelo de deteccao de objetos e segmentacao de imagens em tempo real. Aprendizagem profunda e visao computacional. Alem disso, consegue classificar os objetos.
 - 5 modelos [YOLOv8](https://docs.ultralytics.com/pt/models/yolov8/): YOLOv8n, YOLOv8s, YOLOv8m, YOLOv8l e YOLOv8x

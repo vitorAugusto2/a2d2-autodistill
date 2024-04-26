@@ -1,3 +1,5 @@
+[Autodistill](https://github.com/vitorAugusto2/tcc-a2d2-autodistill-yolo/tree/main?tab=readme-ov-file#%EF%B8%8F-autodistill)
+
 # ✂️ AUTODISTILL
 ## Introdução
 - O Autodistill usa modelos básicos grandes e mais lentos para treinar modelos supervisionados pequenos e mais rápidos. Usando autodistill, você pode passar de imagens não rotuladas para inferência em um modelo personalizado executado na borda, sem intervenção humana no meio

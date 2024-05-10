@@ -68,7 +68,6 @@ name=test1/yolov8n_200i_5e_val
 **Vizualizacao do resultado de validacao**
 ![image](https://github.com/vitorAugusto2/tcc-a2d2-autodistill-yolo/blob/main/runs/detect/test1/yolov8n_200i_5e_val/val_batch0_labels.jpg)
 
-#
 
 ## Test2
 ```python

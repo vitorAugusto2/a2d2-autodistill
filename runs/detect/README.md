@@ -73,7 +73,6 @@ name=test1/yolov8n_200i_5e_val
 ## Test2
 ```python
 # Train
-
 !yolo \
 task=detect \
 mode=train \
@@ -87,7 +86,6 @@ name=test2/yolov8n_200i_10e_train
 
 ```python
 # Val
-
 !yolo \
 task=detect \
 mode=val \

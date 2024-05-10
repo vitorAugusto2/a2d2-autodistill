@@ -63,12 +63,6 @@ name=test1/yolov8n_200i_5e_val
 ![image](https://github.com/vitorAugusto2/tcc-a2d2-autodistill-yolo/blob/main/runs/detect/test1/yolov8n_200i_5e_train/results.png)
 
 **Matriz de confusao**
-
-<figure>
-  <img src="https://github.com/vitorAugusto2/tcc-a2d2-autodistill-yolo/blob/main/runs/detect/test1/yolov8n_200i_5e_train/confusion_matrix.png" alt="Matrix Confusion">
-  <figcaption>Matrix Confusion</figcaption>
-</figure>
-
 ![image](https://github.com/vitorAugusto2/tcc-a2d2-autodistill-yolo/blob/main/runs/detect/test1/yolov8n_200i_5e_train/confusion_matrix.png)
 
 **Vizualizacao do resultado de validacao**

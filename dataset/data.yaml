@@ -1,8 +1,0 @@
-names:
-- car
-- motorcycle
-- pedestrian
-- traffic sign
-nc: 4
-train: c:\Users\vitor\.vscode\scritps\autodistill_yolov8\dataset/train/images
-val: c:\Users\vitor\.vscode\scritps\autodistill_yolov8\dataset/valid/images

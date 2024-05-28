@@ -1,0 +1,7 @@
+names:
+- car
+- person
+- traffic sign
+nc: 3
+train: c:\Users\vitor\.vscode\scritps\autodistill_yolov8\dataset/train/images
+val: c:\Users\vitor\.vscode\scritps\autodistill_yolov8\dataset/valid/images

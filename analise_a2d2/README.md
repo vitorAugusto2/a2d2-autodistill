@@ -9,15 +9,11 @@ câmeras e sensores. Nas Tabelas 1, 2 e 3, são apresentadas as configurações 
 | X-axis e Y-axis    | Cordenadas da posicão atual do veículo.          |
 | ego-dimensions     | Dimensões X,Y e Z do veículo utilizado (metros). |
 
-Fonte: [GEYER et al. 2020](https://www.a2d2.audi/a2d2/en.html)
-
 ### Tabela 2 – Arquivo de configuração: Lidar Configuration
 | **Campo**          | **Descrição**                                                             |
 |--------------------|---------------------------------------------------------------------------|
 | origin             | Cordenadas do sensor em relação a origem do carro.                        |  
 | X-axis e Y-axis    | Cordenadas do sensor em relação ao frame de referência do carro.          |
-
-Fonte: [GEYER et al. 2020](https://www.a2d2.audi/a2d2/en.html)
 
 ### Tabela 3 – Arquivo de configuração: Camera Configuration
 | **Campo**          | **Descrição**                                                    |
@@ -30,8 +26,6 @@ Fonte: [GEYER et al. 2020](https://www.a2d2.audi/a2d2/en.html)
 | Distortion         | Parametros utilizados nas imagens originais.                     |   
 | Resolution         | Resolução da câmera.                                             |   
 | Lens               | Tipo de lente utilizado (Fisheye ou Telecam).                    |   
-
-Fonte: [GEYER et al. 2020](https://www.a2d2.audi/a2d2/en.html) 
 
 Em cada cidade, os dados estão organizados por frame, sendo que cada captura é composta
 por três arquivos distintos: uma imagem em formato PNG, um arquivo JSON que referencia
@@ -50,8 +44,6 @@ LiDAR.
 | origin           | Cordenadas da câmera em relação a origem do carro.                   |  
 | X-axis e Y-axis  | Cordenadas da câmera em relação ao frame de referência do carro.     |   
 | lidar_ids        | Relação de todos os Lidar Ids.                                       | 
-
-Fonte: [GEYER et al. 2020](https://www.a2d2.audi/a2d2/en.html) 
 
 ### Tabela 5 – Arquivo de configuração: Lidar Frame Information
 | Campo       | Descrição                                                      |

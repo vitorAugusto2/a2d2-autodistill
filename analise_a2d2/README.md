@@ -6,19 +6,19 @@ Data A2D2
     |------camera_lidar
     |            |
     |            |----- cena (...)
-    |                    |
-    |                    |-- camera
-    |                    |       |
-    |                    |       |-- cam_front_center (...)
-    |                    |                |-- .JSON
-    |                    |                |-- .NPZ
-    |                    |       
-    |                    |
-    |                    |-- lidar
-    |                    |       |-- cam_front_center (...)
-    |                    |                |-- .NPZ
-    |                    |
-    |                bus_signals.JSON
+    |            |       |
+    |            |       |-- camera
+    |            |       |       |
+    |            |       |       |-- cam_front_center (...)
+    |            |       |                |-- .JSON
+    |            |       |                |-- .NPZ
+    |            |       |       
+    |            |       |
+    |            |       |-- lidar
+    |            |               |-- cam_front_center (...)
+    |            |                        |-- .NPZ
+    |            |       
+    |     bus_signals.JSON
     |
     |
     |

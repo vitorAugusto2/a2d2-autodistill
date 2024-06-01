@@ -1,4 +1,75 @@
-# CONFIGURAÇÕES DO VEÍCULO
+# DATASET A2D2
+## Estrutura do diretório
+``` python
+Data A2D2
+    |
+    |------camera_lidar
+    |            |
+    |            |----- cena (...)
+    |                    |
+    |                    |-- camera
+    |                    |       |
+    |                    |       |-- cam_front_center (...)
+    |                    |                |-- .JSON
+    |                    |                |-- .NPZ
+    |                    |       
+    |                    |
+    |                    |-- lidar
+    |                    |       |-- cam_front_center (...)
+    |                    |                |-- .NPZ
+    |                    |
+    |                bus_signals.JSON
+    |
+    |
+    |
+    |------camera_lidar_semantic
+    |            |
+    |            |------cena (...)
+    |            |        |
+    |            |        |-- camera
+    |            |        |       |
+    |            |        |       |-- cam_front_center (...)
+    |            |        |                |-- .JSON
+    |            |        |                |-- .NPZ
+    |            |        |           
+    |            |        |-- label
+    |            |        |       |-- cam_front_center (...)
+    |            |        |                |-- .PNG
+    |            |        |       
+    |            |        |
+    |            |        |-- lidar
+    |            |        |       |-- cam_front_center (...)
+    |            |        |                |-- .NPZ
+    |            |
+    |        class_list.JSON
+    |  
+    |
+    |
+    |------camera_lidar_semantic_bboxes
+    |            |
+    |            |------ cena (...)
+cams_lidars.JSON |        |
+                 |        |-- camera
+                 |        |       |
+                 |        |       |-- cam_front_center (...)
+                 |        |                |-- .JSON
+                 |        |                |-- .NPZ
+                 |        |           
+                 |        |-- label
+                 |        |       |-- cam_front_center (...)
+                 |        |                |-- .PNG
+                 |        |       
+                 |        |-- label3D
+                 |        |       |-- cam_front_center (...)
+                 |        |                |-- .JSON
+                 |        |-- lidar
+                 |        |       |-- cam_front_center (...)
+                 |        |                |-- .NPZ
+                 |
+            class_list.JSON
+```
+            
+# Configurações do veículo
 Cada cidade fornecida possui um arquivo Configuration.json contendo informações abrangentes sobre o setup do veículo, 
 câmeras e sensores. Nas Tabelas 1, 2 e 3, são apresentadas as configurações dos veículos para cada sensor.
 

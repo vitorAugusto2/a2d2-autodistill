@@ -1,6 +1,7 @@
 # DATASET A2D2
+
 ## Link para Download
-Alguns arquivos não estão completos devido ao seu tamanho, mas você pode baixá-los através deste [link]([https://www.a2d2.audi/a2d2/en/download.html](https://aev-autonomous-driving-dataset.s3.eu-central-1.amazonaws.com/a2d2-preview.tar)).
+Alguns arquivos não estão completos devido ao seu tamanho, mas você pode acessar a pasta através deste [link]([https://www.a2d2.audi/a2d2/en/download.html](https://aev-autonomous-driving-dataset.s3.eu-central-1.amazonaws.com/a2d2-preview.tar]).
 
 ## Estrutura do diretório
 ``` python
